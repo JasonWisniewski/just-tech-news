@@ -1,4 +1,4 @@
-t of code snippet<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,8 +15,12 @@ t of code snippet<!DOCTYPE html>
         <a href="/">Just Tech News</a>
       </h1>
       <nav>
+        {{#if loggedIn}}
+        <script src="/javascript/logout.js"></script>
         <button id="logout" class="btn-no-style">logout</button>
-        <a href= "/">login</a>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
       </nav>
     </header>
     <main>
@@ -26,7 +30,7 @@ t of code snippet<!DOCTYPE html>
       Thanks for visiting!
     </footer>
   </div>
-  <script src ="/javascript/logout.js"></script>
+
 </body>
 
 </html>
